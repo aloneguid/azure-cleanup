@@ -11,4 +11,5 @@ steps:
     ScriptType: 'FilePath'
     ScriptPath: 'cleanup.ps1'
     ScriptArguments: '-Tag "test"'
+    azurePowerShellVersion: 'LatestVersion'
     pwsh: true
