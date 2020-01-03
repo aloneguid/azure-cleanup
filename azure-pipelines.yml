@@ -1,0 +1,14 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: AzurePowerShell@4
+  inputs:
+    azureSubscription: 'PAYG (personal)'
+    ScriptType: 'FilePath'
+    ScriptPath: 'cleanup.ps1'
+    ScriptArguments: '-Tag "test"'
+    pwsh: true
