@@ -15,6 +15,6 @@ steps:
     azureSubscription: 'PAYG (personal)'
     ScriptType: 'FilePath'
     ScriptPath: 'cleanup.ps1'
-    ScriptArguments: '-Tag "test"'
+    ScriptArguments: '-DeleteMe'
     azurePowerShellVersion: 'LatestVersion'
     pwsh: true
