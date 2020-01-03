@@ -1,5 +1,10 @@
-trigger:
-- master
+schedules:
+- cron: "*/15 * * * *"
+  displayName: "hourly cleanup"
+  branches:
+    include:
+    - master
+  always: "true"
 
 pool:
   vmImage: 'windows-2019'
